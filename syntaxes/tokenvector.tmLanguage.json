@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "TokenVector",
+  "scopeName": "source.tokenvector",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#special-variables"
+    },
+    {
+      "include": "#type-annotations"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#classes"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#operators"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "name": "comment.line.number-sign.tokenvector",
+      "match": "#.*$"
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.tokenvector",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.tokenvector",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.tokenvector",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.tokenvector",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "special-variables": {
+      "name": "variable.language.special.tokenvector",
+      "match": "\\b(__tkv_import__|__tkv_extern_assembly__|__tkv_entry__|self)\\b"
+    },
+    "type-annotations": {
+      "patterns": [
+        {
+          "name": "storage.type.primitive.tokenvector",
+          "match": "\\b(i32|i64|f32|f64|str|int|bool)\\b"
+        },
+        {
+          "name": "storage.type.quoted.tokenvector",
+          "match": "\"(i32|i64|f32|f64|str|int|bool)\""
+        }
+      ]
+    },
+    "keywords": {
+      "name": "keyword.control.tokenvector",
+      "match": "\\b(def|class|return|if|elif|else|for|while|import|in|is|not|and|or|raise|try|except|finally|pass|break|continue|as)\\b"
+    },
+    "functions": {
+      "patterns": [
+        {
+          "match": "\\bdef\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+          "captures": {
+            "1": {
+              "name": "entity.name.function.tokenvector"
+            }
+          }
+        },
+        {
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+          "captures": {
+            "1": {
+              "name": "entity.name.function.call.tokenvector"
+            }
+          }
+        }
+      ]
+    },
+    "classes": {
+      "match": "\\bclass\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+      "captures": {
+        "1": {
+          "name": "entity.name.type.class.tokenvector"
+        }
+      }
+    },
+    "numbers": {
+      "name": "constant.numeric.tokenvector",
+      "match": "\\b(0x[0-9a-fA-F]+|[0-9]+(\\.[0-9]+)?)\\b"
+    },
+    "operators": {
+      "name": "keyword.operator.tokenvector",
+      "match": "(\\+|-|\\*|/|//|%|\\*\\*|==|!=|<=|>=|<|>|=|->)"
+    }
+  }
+}

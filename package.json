@@ -1,0 +1,40 @@
+{
+  "name": "tokenvector-syntax",
+  "displayName": "TokenVector Language Support",
+  "description": "Official syntax highlighting and language configuration for TokenVector (.tkv)",
+  "version": "1.0.0",
+  "publisher": "nguyenhungtran18",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tokenvector",
+        "aliases": [
+          "TokenVector",
+          "tokenvector",
+          "tkv"
+        ],
+        "extensions": [
+          ".tkv"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tokenvector",
+        "scopeName": "source.tokenvector",
+        "path": "./syntaxes/tokenvector.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyenhungtran18/TokenVector"
+  }
+}
