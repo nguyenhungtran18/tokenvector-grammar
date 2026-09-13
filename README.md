@@ -1,12 +1,10 @@
 # TokenVector Language Support
 
-<p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nguyenhungtran18.tokenvector-syntax"><img src="https://img.shields.io/visual-studio-marketplace/v/nguyenhungtran18.tokenvector-syntax?style=flat-square&color=blue&label=Marketplace" alt="Marketplace Version"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=nguyenhungtran18.tokenvector-syntax"><img src="https://img.shields.io/visual-studio-marketplace/i/nguyenhungtran18.tokenvector-syntax?style=flat-square&color=success" alt="Installs"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=nguyenhungtran18.tokenvector-syntax"><img src="https://img.shields.io/visual-studio-marketplace/r/nguyenhungtran18.tokenvector-syntax?style=flat-square" alt="Rating"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT"></a>
-  <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-8.0%20LTS-purple.svg?style=flat-square" alt="Platform: .NET 8.0"></a>
-</p>
+[![Marketplace Version](https://img.shields.io/vscode-marketplace/v/nguyenhungtran18.tokenvector-syntax?style=flat-square&color=blue&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=nguyenhungtran18.tokenvector-syntax)
+[![Installs](https://img.shields.io/vscode-marketplace/d/nguyenhungtran18.tokenvector-syntax?style=flat-square&color=success&label=Installs)](https://marketplace.visualstudio.com/items?itemName=nguyenhungtran18.tokenvector-syntax)
+[![Rating](https://img.shields.io/vscode-marketplace/r/nguyenhungtran18.tokenvector-syntax?style=flat-square&label=Rating)](https://marketplace.visualstudio.com/items?itemName=nguyenhungtran18.tokenvector-syntax)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![.NET 8](https://img.shields.io/badge/.NET-8.0%20LTS-purple.svg?style=flat-square)](https://dotnet.microsoft.com/)
 
 Official VS Code language support for **TokenVector (`.tkv`, `.tv`)** — an Ahead-Of-Time (AOT) compiled, statically-typed programming language targeting .NET CIL with unboxed scalar types, zero external runtime dependency, and zero-allocation memory performance.
 
