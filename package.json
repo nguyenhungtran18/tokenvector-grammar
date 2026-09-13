@@ -1,14 +1,30 @@
 {
   "name": "tokenvector-syntax",
   "displayName": "TokenVector Language Support",
-  "description": "Official syntax highlighting and language configuration for TokenVector (.tkv)",
-  "version": "1.0.0",
+  "description": "Fast syntax highlighting, AOT workflows, and snippets for TokenVector — an Ahead-Of-Time (AOT) compiled native language for .NET CIL.",
+  "version": "1.0.9",
   "publisher": "nguyenhungtran18",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.75.0"
   },
+  "keywords": [
+    "python-like",
+    "cil",
+    "dotnet",
+    "aot",
+    "compiler",
+    "syntax-highlighting",
+    "native",
+    "tokenvector",
+    "tkv",
+    "tv",
+    "snippets",
+    "performance"
+  ],
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "languages": [
@@ -20,7 +36,8 @@
           "tkv"
         ],
         "extensions": [
-          ".tkv"
+          ".tkv",
+          ".tv"
         ],
         "configuration": "./language-configuration.json"
       }
@@ -30,6 +47,12 @@
         "language": "tokenvector",
         "scopeName": "source.tokenvector",
         "path": "./syntaxes/tokenvector.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "tokenvector",
+        "path": "./snippets/tokenvector.json"
       }
     ]
   },

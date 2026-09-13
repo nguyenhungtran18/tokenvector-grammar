@@ -13,6 +13,9 @@
       "include": "#special-variables"
     },
     {
+      "include": "#constants"
+    },
+    {
       "include": "#type-annotations"
     },
     {
@@ -64,23 +67,27 @@
     },
     "special-variables": {
       "name": "variable.language.special.tokenvector",
-      "match": "\\b(__tkv_import__|__tkv_extern_assembly__|__tkv_entry__|self)\\b"
+      "match": "\\b(__tkv_import__|__tkv_extern_assembly__|__tkv_entry__|__name__|__file__|self)\\b"
+    },
+    "constants": {
+      "name": "constant.language.tokenvector",
+      "match": "\\b(True|False|None)\\b"
     },
     "type-annotations": {
       "patterns": [
         {
           "name": "storage.type.primitive.tokenvector",
-          "match": "\\b(i32|i64|f32|f64|str|int|bool)\\b"
+          "match": "\\b(i8|i16|i32|i64|u8|u16|u32|u64|f16|f32|f64|str|int|float|bool|void|TkvInt|TkvStr)\\b"
         },
         {
           "name": "storage.type.quoted.tokenvector",
-          "match": "\"(i32|i64|f32|f64|str|int|bool)\""
+          "match": "\"(i8|i16|i32|i64|u8|u16|u32|u64|f16|f32|f64|str|int|float|bool|void|TkvInt|TkvStr)\""
         }
       ]
     },
     "keywords": {
       "name": "keyword.control.tokenvector",
-      "match": "\\b(def|class|return|if|elif|else|for|while|import|in|is|not|and|or|raise|try|except|finally|pass|break|continue|as)\\b"
+      "match": "\\b(def|class|return|if|elif|else|for|while|import|in|is|not|and|or|raise|try|except|finally|pass|break|continue|as|with|yield|async|await|assert|global|nonlocal|lambda)\\b"
     },
     "functions": {
       "patterns": [
@@ -112,11 +119,11 @@
     },
     "numbers": {
       "name": "constant.numeric.tokenvector",
-      "match": "\\b(0x[0-9a-fA-F]+|[0-9]+(\\.[0-9]+)?)\\b"
+      "match": "\\b(0x[0-9a-fA-F]+|[0-9]+(\\.[0-9]+)?([eE][+-]?[0-9]+)?)\\b"
     },
     "operators": {
       "name": "keyword.operator.tokenvector",
-      "match": "(\\+|-|\\*|/|//|%|\\*\\*|==|!=|<=|>=|<|>|=|->)"
+      "match": "(\\+|-|\\*|/|//|%|\\*\\*|==|!=|<=|>=|<|>|=|->|@|\\+=|-=|\\*=|/=|&=|\\|=|\\^=)"
     }
   }
 }

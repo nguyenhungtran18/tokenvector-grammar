@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="tokenvector-syntax" Version="1.0.0" Publisher="nguyenhungtran18"/>
+    <Identity Language="en-US" Id="tokenvector-syntax" Version="1.0.9" Publisher="nguyenhungtran18"/>
     <DisplayName>TokenVector Language Support</DisplayName>
-    <Description xml:space="preserve">Official syntax highlighting and language configuration for TokenVector (.tkv)</Description>
-    <Tags>TokenVector,tokenvector,tkv,snippet,programming languages</Tags>
-    <Categories>Programming Languages</Categories>
+    <Description xml:space="preserve">Fast syntax highlighting, AOT workflows, and snippets for TokenVector — an Ahead-Of-Time (AOT) compiled native language for .NET CIL.</Description>
+    <Tags>python-like,cil,dotnet,aot,compiler,syntax-highlighting,native,tokenvector,tkv,tv,snippets,performance,programming languages</Tags>
+    <Categories>Programming Languages,Snippets</Categories>
     <GalleryFlags>Public</GalleryFlags>
+    <Icon>extension/icon.png</Icon>
     <Properties>
       <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.75.0" />
       <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
       <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
       <Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
       <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
-      <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/nguyenhungtran18/tokenvector-grammar" />
-      <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/nguyenhungtran18/tokenvector-grammar" />
-      <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/nguyenhungtran18/tokenvector-grammar" />
-      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/nguyenhungtran18/tokenvector-grammar/issues" />
-      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/nguyenhungtran18/tokenvector-grammar/blob/main/README.md" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/nguyenhungtran18/TokenVector" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/nguyenhungtran18/TokenVector" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/nguyenhungtran18/TokenVector" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/nguyenhungtran18/TokenVector/issues" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/nguyenhungtran18/TokenVector/blob/main/README.md" />
       <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      <Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free" />
     </Properties>
     <License>extension/LICENSE</License>
   </Metadata>
@@ -28,6 +30,8 @@
   <Dependencies/>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/icon.png" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Icons.Small" Path="extension/icon.png" Addressable="true" />
     <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
     <Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE" Addressable="true" />
   </Assets>
